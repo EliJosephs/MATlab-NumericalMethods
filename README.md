@@ -1,9 +1,9 @@
 # MATLAB Numerical Methods
-All files in this repository are MATLAB .m files. Each file is in the form of a MATLAB function, which can be called by any file or the command line, so long as the function file is in the working directory. 
+All files in this repository are MATLAB functions. To use them, they must be in the current MATLAB working directory. Once there, thery may be called by other files or through the command window. 
 
-All functions are original and written to meet certain criteria. MATLAB has built-in functions for each of the files in this reposistory, which are optimized and will run faster. However, the functions provided here sallow for the inner workings and theory behind these numerical methods to be understood. Future algorithms may rely in part on any one of these files to generate a more in-depth and advanced method. 
+All functions are original and written to meet certain criteria. MATLAB has built-in functions for each of the files in this reposistory, which are optimized and will run faster. However, the functions provided here, allow for a deeper understranding of these numerical methods, and as a framework for potential future algorithms. 
 
-The details of every function are given at the beginning of each .m file. This information will also return in the MATlab command window when prompted by:
+The details of every function are given at the beginning of each .m file, as well as their respective README file. This information will also return in the MATlab command window when prompted by:
 
 help "function_name"
   
@@ -24,7 +24,6 @@ LU Decomposition takes a square matrix A and decomposes (or factorizes) it into 
 ## False Position Rootfinding
 
 Calculates the root of a function given two brackets. Slightly faster than bisection. Will **ALWAYS** converge on a root if the input is correct. 
-
 
 ## Simpson's 1/3 Rule Integration
 
