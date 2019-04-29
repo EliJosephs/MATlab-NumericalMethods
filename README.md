@@ -14,53 +14,85 @@ Each function also contains comments, for better understanding.
 # Current Algorithms
 
 1.) LU Decomposition/Factorization
+
 2.) False Position Rootfinding
+
 3.) Simpson's 1/3 Rule Integration
 
 ## LU Decomposition/Factorization
 
 luFactor Returns L and U factor matrices and pivot matrix P, given matrix A, 
-   Inputs:
-   A
 
-   Outputs:
-   L
-   U
-   P
+Inputs:
+
+A
+
+
+Outputs:
+
+L
+
+U
+
+P
    
    A is a square matrix populated by numbers. Only one input is allowed.
    
-   L is the lower triangular matrix of dimensions A
-   U is the upper triangular matrix of dimensions A
-   P is the pivot matrix of dimensions A
+
+L is the lower triangular matrix of dimensions A
+
+U is the upper triangular matrix of dimensions A
+
+P is the pivot matrix of dimensions A
 
 ## False Position Rootfinding
 
 falsePosition Calculates the root of a function given two brackets.
-   Inputs:
-   Function (Use a function handle)
-   Lower bracket
-   Upper bracket
-   Desired % relative error
-   Max number of iterations
 
-   Outputs: 
-   root
-   Function value at root
-   Approximate % relative error
-   Number of iterations
+Inputs:
+
+Function (Use a function handle)
+
+Lower bracket
+
+Upper bracket
+
+Desired % relative error
+
+Max number of iterations
+
+
+Outputs: 
+
+root
+
+Function value at root
+
+Approximate % relative error
+
+Number of iterations
+
 
 ## Simpson's 1/3 Rule Integration
 
+
 Simpson applies the Simpson's 1/3 Rule to integrate y over x. 
- Inputs:
- x:     x must be an equally spaced array, covering the interval of integration
- y:     y must be an array containing function values corresponding to x
 
- Outputs:
- I:     Resulting estimate of the integral
+Inputs:
 
- Notes and Warnings:
+x:     x must be an equally spaced array, covering the interval of integration
+
+y:     y must be an array containing function values corresponding to x
+
+
+
+Outputs:
+
+I:     Resulting estimate of the integral
+
+
+
+Notes and Warnings:
 
  Simpson evaluates the integral using Simpson's 1/3 Rule for intervals of
  x which contain an even number of bins. That is, the number of elements
