@@ -11,13 +11,13 @@ In the same working directory.
   
 Each function also contains comments, for better understanding. 
 
-## Current Algorithms
+# Current Algorithms
 
 1.) LU Decomposition/Factorization
 2.) False Position Rootfinding
 3.) Simpson's 1/3 Rule Integration
 
-### LU Decomposition/Factorization
+## LU Decomposition/Factorization
 
 luFactor Returns L and U factor matrices and pivot matrix P, given matrix A, 
    Inputs:
@@ -34,7 +34,7 @@ luFactor Returns L and U factor matrices and pivot matrix P, given matrix A,
    U is the upper triangular matrix of dimensions A
    P is the pivot matrix of dimensions A
 
-### False Position Rootfinding
+## False Position Rootfinding
 
 falsePosition Calculates the root of a function given two brackets.
    Inputs:
@@ -50,7 +50,7 @@ falsePosition Calculates the root of a function given two brackets.
    Approximate % relative error
    Number of iterations
 
-### Simpson's 1/3 Rule Integration
+## Simpson's 1/3 Rule Integration
 
 Simpson applies the Simpson's 1/3 Rule to integrate y over x. 
  Inputs:
