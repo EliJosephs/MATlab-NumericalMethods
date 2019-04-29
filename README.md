@@ -92,7 +92,7 @@ I:     Resulting estimate of the integral
 
 
 
-Notes and Warnings:
+**Notes and Warnings:**
 
  Simpson evaluates the integral using Simpson's 1/3 Rule for intervals of
  x which contain an even number of bins. That is, the number of elements
