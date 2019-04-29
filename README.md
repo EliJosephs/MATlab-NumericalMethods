@@ -13,86 +13,24 @@ Each function also contains comments, for better understanding.
 
 # Current Algorithms
 
-1.) LU Decomposition/Factorization
-
-2.) False Position Rootfinding
-
-3.) Simpson's 1/3 Rule Integration
+1. LU Decomposition/Factorization
+2. False Position Rootfinding
+3. Simpson's 1/3 Rule Integration
 
 ## LU Decomposition/Factorization
 
-luFactor Returns L and U factor matrices and pivot matrix P, given matrix A, 
-
-Inputs:
-
-A
-
-
-Outputs:
-
-L
-
-U
-
-P
-   
-   A is a square matrix populated by numbers. Only one input is allowed.
-   
-
-L is the lower triangular matrix of dimensions A
-
-U is the upper triangular matrix of dimensions A
-
-P is the pivot matrix of dimensions A
+LU Decomposition takes a square matrix A and decomposes (or factorizes) it into lower triangular matrix L and upper triangular  matrix U. 
 
 ## False Position Rootfinding
 
-falsePosition Calculates the root of a function given two brackets.
-
-Inputs:
-
-Function (Use a function handle)
-
-Lower bracket
-
-Upper bracket
-
-Desired % relative error
-
-Max number of iterations
-
-
-Outputs: 
-
-root
-
-Function value at root
-
-Approximate % relative error
-
-Number of iterations
+Calculates the root of a function given two brackets. Slightly faster than bisection. Will **ALWAYS** converge on a root if the input is correct. 
 
 
 ## Simpson's 1/3 Rule Integration
 
+Simpson applies the Simpson's 1/3 Rule to integrate y over x. x and y must both be equal length arrays.
 
-Simpson applies the Simpson's 1/3 Rule to integrate y over x. 
-
-Inputs:
-
-x:     x must be an equally spaced array, covering the interval of integration
-
-y:     y must be an array containing function values corresponding to x
-
-
-
-Outputs:
-
-I:     Resulting estimate of the integral
-
-
-
-**Notes and Warnings:**
+**Notes and Warnings (Also included inside Simpson):**
 
  Simpson evaluates the integral using Simpson's 1/3 Rule for intervals of
  x which contain an even number of bins. That is, the number of elements
