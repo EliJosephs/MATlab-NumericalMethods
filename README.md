@@ -16,6 +16,7 @@ Each function also contains comments, for better understanding.
 1. LU Decomposition/Factorization
 2. False Position Rootfinding
 3. Simpson's 1/3 Rule Integration
+4. Bakhshali Method Square Root
 
 ## LU Decomposition/Factorization
 
@@ -49,3 +50,7 @@ Simpson applies the Simpson's 1/3 Rule to integrate y over x. x and y must both 
  checking may affect the result of Simpson, with larger errors occurring
  for larger resulting integrals. It is recommended to generate x using
  linspace(), or ensure that tabulated data is spaced correctly. 
+ 
+ ## Bakhshali Method Square Root
+ 
+ Calculates the square root of a number using the Bakhshali Method, which converges extremely fast. 
