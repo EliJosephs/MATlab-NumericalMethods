@@ -1,6 +1,0 @@
-# Notes for using git
-
-## To create a Branch
-
-To be added later...
-
