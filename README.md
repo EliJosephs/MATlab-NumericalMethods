@@ -53,4 +53,4 @@ Simpson applies the Simpson's 1/3 Rule to integrate y over x. x and y must both 
  
  ## Bakhshali Method Square Root
  
- Calculates the square root of a number using the Bakhshali Method, which converges extremely fast. 
+ Calculates the square root of a number using the Bakhshali Method, which converges very fast for an iterative method. 
