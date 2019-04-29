@@ -1,0 +1,1 @@
+This is an INIT file for my local computer git repository.
