@@ -1,9 +1,9 @@
 # MATLAB Numerical Methods
-All files in this repository are MATLAB .m files. Each file is in the form of a MATLAB function, which can be called by any file or the command line, so long as the function file is in the working directory. 
+All files in this repository are MATLAB functions. To use them, they must be in the current MATLAB working directory. Once there, thery may be called by other files or through the command window. 
 
-All functions are original and written to meet certain criteria. MATLAB has built-in functions for each of the files in this reposistory, which are optimized and will run faster. However, the functions provided here sallow for the inner workings and theory behind these numerical methods to be understood. Future algorithms may rely in part on any one of these files to generate a more in-depth and advanced method. 
+All functions are original and written to meet certain criteria. MATLAB has built-in functions for each of the files in this reposistory, which are optimized and will run faster. However, the functions provided here, allow for a deeper understranding of these numerical methods, and as a framework for potential future algorithms. 
 
-The details of every function are given at the beginning of each .m file. This information will also return in the MATlab command window when prompted by:
+The details of every function are given at the beginning of each .m file, as well as their respective README file. This information will also return in the MATlab command window when prompted by:
 
 help "function_name"
   
@@ -13,86 +13,23 @@ Each function also contains comments, for better understanding.
 
 # Current Algorithms
 
-1.) LU Decomposition/Factorization
-
-2.) False Position Rootfinding
-
-3.) Simpson's 1/3 Rule Integration
+1. LU Decomposition/Factorization
+2. False Position Rootfinding
+3. Simpson's 1/3 Rule Integration
 
 ## LU Decomposition/Factorization
 
-luFactor Returns L and U factor matrices and pivot matrix P, given matrix A, 
-
-Inputs:
-
-A
-
-
-Outputs:
-
-L
-
-U
-
-P
-   
-   A is a square matrix populated by numbers. Only one input is allowed.
-   
-
-L is the lower triangular matrix of dimensions A
-
-U is the upper triangular matrix of dimensions A
-
-P is the pivot matrix of dimensions A
+LU Decomposition takes a square matrix A and decomposes (or factorizes) it into lower triangular matrix L and upper triangular  matrix U. 
 
 ## False Position Rootfinding
 
-falsePosition Calculates the root of a function given two brackets.
-
-Inputs:
-
-Function (Use a function handle)
-
-Lower bracket
-
-Upper bracket
-
-Desired % relative error
-
-Max number of iterations
-
-
-Outputs: 
-
-root
-
-Function value at root
-
-Approximate % relative error
-
-Number of iterations
-
+Calculates the root of a function given two brackets. Slightly faster than bisection. Will **ALWAYS** converge on a root if the input is correct. 
 
 ## Simpson's 1/3 Rule Integration
 
+Simpson applies the Simpson's 1/3 Rule to integrate y over x. x and y must both be equal length arrays.
 
-Simpson applies the Simpson's 1/3 Rule to integrate y over x. 
-
-Inputs:
-
-x:     x must be an equally spaced array, covering the interval of integration
-
-y:     y must be an array containing function values corresponding to x
-
-
-
-Outputs:
-
-I:     Resulting estimate of the integral
-
-
-
-**Notes and Warnings:**
+**Notes and Warnings (Also included inside Simpson):**
 
  Simpson evaluates the integral using Simpson's 1/3 Rule for intervals of
  x which contain an even number of bins. That is, the number of elements
